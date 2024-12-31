@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>櫻雪小窩‧⁺˚☾</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <script>
+        window.addEventListener("load", function () {var audio = document.getElementById('background-music');
+        document.getElementById('background-music').play();
+        audio.volume = 0.1;
+        });
+
+        function toggleMusic() {
+            var audio = document.getElementById('background-music');
+            var button = document.getElementById('music-button');
+            if (audio.paused) {
+                audio.play();
+                button.style.background = "#3E4053";
+            } else {
+                audio.pause();
+                button.style.background = "#ff6699";
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <audio id="background-music" autoplay loop>
+        <source src="background_music/PerituneMaterial_Sakuya4.mp3" type="audio/mpeg">
+    </audio>
+    <iframe src="main_page.html" frameborder="0" style="width: 100vw;height: 100vh;"></iframe>
+    <button id="music-button" onclick="toggleMusic()">♪</button>
+    <style>
+        button{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 30px;
+            height: 30px;
+            margin: 1%;
+            border-radius: 50%;
+            border: none;
+            background: #ff6699;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        button:hover {
+        background: #3E4053;
+        transform: scale(1.1);
+        }
+    </style>
+</body>
+</html>

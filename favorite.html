@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>櫻雪小窩‧⁺˚☾</title>
+        <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="cssnow"></div>
+        <script>
+            for(let i=0;i<9;i++){
+                document.querySelector('.cssnow').innerHTML += '<span>';}
+        </script>
+        <div class="container2">
+            <!-- 左側簡介欄 -->
+            <div class="sidebar">
+                <div class="user-info">
+                    <img src="image/HEAD1.jpg" alt="頭像">
+                    <h1>推</h1>
+                    <h1>薦</h1>
+                    <h1>名</h1>
+                    <h1>單</h1>
+                </div>
+                <div class="links-container">
+                    <a href="artwork.html" class="home-link2"><strong>作品集</strong></a>
+                    <a href="game.html" class="home-link2"><strong>遊戲歷程</strong></a>
+                    <a href="main_page.html" class="home-link2"><strong>首頁</strong></a>
+                </div>
+            </div>
+            <!-- 右側內容區域 -->
+        <div class="portfolio3">
+            <div class="profile-row">
+                <div class="profile-card">
+                    <h2 class="profession-title">創作者</h2>
+                    <img src="image/favorite1.jpg" alt="頭像" class="profile-image">
+                    <div class="profile-info">
+                        <p class="profile-name">星辰微依</p>
+                        <a href="https://www.instagram.com/onlystar_0u0/" target="_blank" class="profile-link">點我查看</a>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <h2 class="profession-title">創作者</h2>
+                    <img src="image/favorite2.jpg" alt="頭像" class="profile-image">
+                    <div class="profile-info">
+                        <p class="profile-name">鼻涕蟲</p>
+                        <a href="https://www.instagram.com/bitislug/" target="_blank" class="profile-link">點我查看</a>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <h2 class="profession-title">作者</h2>
+                    <img src="image/favorite3.png" alt="頭像" class="profile-image">
+                    <div class="profile-info">
+                        <p class="profile-name">微混吃等死</p>
+                        <a href="https://www.facebook.com/peopleinthenorth" target="_blank" class="profile-link">點我查看</a>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <h2 class="profession-title">Vtuber</h2>
+                    <img src="image/favorite4.jpg" alt="頭像" class="profile-image">
+                    <div class="profile-info">
+                        <p class="profile-name">エリアナ</p>
+                        <a href="https://x.com/Tenshi_Elyana" target="_blank" class="profile-link">點我查看</a>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <h2 class="profession-title">樂團</h2>
+                    <img src="image/favorite5.jpg" alt="頭像" class="profile-image">
+                    <div class="profile-info">
+                        <p class="profile-name">ロクデナシ</p>
+                        <a href="https://www.youtube.com/@Rokudenashi_ninzin" target="_blank" class="profile-link">點我查看</a>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <h2 class="profession-title">音樂頻道</h2>
+                    <img src="image/favorite6.jpg" alt="頭像" class="profile-image">
+                    <div class="profile-info">
+                        <p class="profile-name">Vindsvept,<br>fantasy music</p>
+                        <a href="https://www.youtube.com/@Vindsvept" target="_blank" class="profile-link">點我查看</a>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <h2 class="profession-title">繪師</h2>
+                    <img src="image/favorite7.gif" alt="頭像" class="profile-image">
+                    <div class="profile-info">
+                        <p class="profile-name">Namie</p>
+                        <a href="https://x.com/nambarimasu" target="_blank" class="profile-link">點我查看</a>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <h2 class="profession-title">繪師</h2>
+                    <img src="image/favorite8.jpg" alt="頭像" class="profile-image">
+                    <div class="profile-info">
+                        <p class="profile-name">usachanGET</p>
+                        <a href="https://x.com/USC_GT" target="_blank" class="profile-link">點我查看</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="back_top">
+                <a href="#top" class="move">↥</a>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+                integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+            <script>
+                $("a.move").on("click", function(event){
+                    event.preventDefault();
+                
+                    var to = $(this).attr("href");
+                
+                    if(to === "#top"){
+                        $(".portfolio3").animate({
+                            scrollTop: 0 
+                        }, 1000);
+                    }
+                });
+            </script>
+        </div>
+    </body>
+</html>

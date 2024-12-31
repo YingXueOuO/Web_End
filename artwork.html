@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>櫻雪小窩‧⁺˚☾</title>
+        <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="cssnow"></div>
+        <script>
+            for(let i=0;i<9;i++){
+                document.querySelector('.cssnow').innerHTML += '<span>';}
+        </script>
+        <div class="container2">
+            <!-- 左側簡介欄 -->
+            <div class="sidebar">
+                <div class="user-info">
+                    <img src="image/HEAD1.jpg" alt="頭像">
+                    <h1>作</h1>
+                    <h1>品</h1>
+                    <h1>集</h1>
+                </div>
+                <div class="links-container">
+                    <a href="game.html" class="home-link2"><strong>遊戲歷程</strong></a>
+                    <a href="favorite.html" class="home-link2"><strong>推薦名單</strong></a>
+                    <a href="main_page.html" class="home-link2"><strong>首頁</strong></a>
+                </div>
+            </div>
+            <!-- 作品集展示 -->
+            <div class="portfolio">
+                <section> <img src="artwork_image/artwork1.jpg" alt="img" class="main-image1">
+                    <div class="content">
+                    </div>
+                </section>
+                <section> <img src="artwork_image/artwork2.jpg" alt="img" class="main-image2">
+                    <div class="content">
+                    </div>
+                </section>
+                <section> <img src="artwork_image/artwork3.jpg" alt="img">
+                    <div class="content">
+                    </div>
+                </section>
+                <section> <img src="artwork_image/artwork4.jpg" alt="img">
+                    <div class="content">
+                    </div>
+                </section>
+                <section> <img src="artwork_image/artwork5.jpg" alt="img">
+                    <div class="content">
+                    </div>
+                </section>
+                <section> <img src="artwork_image/artwork6.jpg" alt="img">
+                    <div class="content">
+                    </div>
+                </section>
+                <section> <img src="artwork_image/artwork7.jpg" alt="img">
+                    <div class="content">
+                    </div>
+                </section>
+                <section> <img src="artwork_image/artwork8.jpg" alt="img">
+                    <div class="content">
+                    </div>
+                </section>
+                <section> <video src="artwork_video1/artwork9.mp4"video" controls>
+                    <div class="content">
+                    </div>
+                </section>
+                <section> <video src="artwork_video2/artwork10.mp4" alt="video" controls>
+                    <div class="content">
+                    </div>
+                </section>
+
+                <div class="back_top">
+                    <a href="#top" class="move">↥</a>
+                </div>
+    
+                <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+                    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+                <script>
+                    $("a.move").on("click", function(event){
+                        event.preventDefault();
+                    
+                        var to = $(this).attr("href");
+                    
+                        if(to === "#top"){
+                            $(".portfolio").animate({
+                                scrollTop: 0 
+                            }, 1000);
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+    </body>
+</html>

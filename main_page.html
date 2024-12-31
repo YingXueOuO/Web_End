@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>櫻雪小窩‧⁺˚☾</title>
+        <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="cssnow"></div>
+        <script>
+            for(let i=0;i<9;i++){
+                document.querySelector('.cssnow').innerHTML += '<span>';}
+        </script>
+        
+        <div class="container">
+            <!-- 左側簡介欄 -->
+            <div class="sidebar">
+                <div class="user-info">
+                    <img src="image/HEAD1.jpg" alt="頭像">
+                    <h3>玩家：<strong>櫻雪</strong></h3>
+                    <h3>命格：巨蟹</h3>
+                    <h3>Level：20</h3>
+                    <div class="experience-bar">
+                        <div class="experience-progress">45%</div>
+                    </div>
+                    <h4 style="color: #CC0000;">STR：B</h4>
+                    <h4 style="color: #CC9900;">VIT：A</h4>
+                    <h4 style="color: #0033CC;">INT：D</h4>
+                    <h4 style="color: #660099;">AGI：C</h4>
+                    <h4 style="color: #009900;">LUK：S</h4>
+                    <a href="https://www.instagram.com/poetry.night_/" target="_blank" class="image-link"><img src="image/imglink1.jpg" alt="IG" class="clickable-image"></a>
+                    <a href="https://x.com/YingXue_ouo" target="_blank" class="image-link"><img src="image/imglink2.jpg" alt="X" class="clickable-image"></a>
+                    <a href="https://www.youtube.com/@%E6%AB%BB%E9%9B%AA%E3%82%9E" target="_blank" class="image-link"><img src="image/imglink3.jpg" alt="YT" class="clickable-image"></a>
+                    <a href="main_page.html" class="home-link"><strong>首頁</strong></a>
+                </div>       
+            </div>
+
+            <!-- 右側按鈕 -->
+            <div class="main-content">
+                <div class="card-container">
+                    <a href="artwork.html" class="card">
+                        <img src="image/cardimg1.jpg" alt="作品">
+                        <h2>作品集</h2>
+                    </a>
+                    <a href="game.html" class="card">
+                        <img src="image/cardimg2.jpg" alt="遊戲">
+                        <h2>遊戲歷程</h2>
+                    </a>
+                    <a href="favorite.html" class="card">
+                        <img src="image/cardimg3.jpg" alt="喜好">
+                        <h2>推薦名單</h2>
+                    </a>
+                </div>
+
+                <div class="back_top">
+                    <a href="#top" class="move">↥</a>
+                </div>
+    
+                <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+                    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+                <script>
+                    $("a.move").on("click", function(event){
+                        event.preventDefault();
+                    
+                        var to = $(this).attr("href");
+                    
+                        if(to === "#top"){
+                            $(".card-container").animate({
+                                scrollTop: 0 
+                            }, 1000);
+                        }
+                    });
+                </script>
+
+                <!-- 底部選單 -->
+                <div class="footer">
+                    <div class="footer-hover">
+                        <a href="#">簡介</a>
+                        <img src="./image/image1.jpg">
+                    </div>
+                    <div class="footer-hover">
+                        <a href="#">設備</a>
+                        <img src="./image/image2.jpg">
+                    </div>
+                    <div class="footer-hover">
+                        <a href="#">任務</a>
+                        <img src="./image/image3.jpg">
+                    </div>
+                    <div class="footer-hover">
+                        <a href="#">隨從</a>
+                        <img src="./image/image4.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
